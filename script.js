@@ -123,26 +123,17 @@ function setLocalStorage(){
 }
 
 function getLocalStorage(){
-	if (typeof(Storage) !== "undefined") {
-		if(localStorage.newComName !== "undefined" && localStorage.newlogo !== "undefined" && localStorage.newcoverpic !== "undefined"){
-			document.getElementById("cname").value = localStorage.newComName;
-			document.getElementById("cname").focus();
-			document.getElementById("logourl").value = localStorage.newlogo;
-			document.getElementById("logourl").focus();
-			document.getElementById("coverpic").value = localStorage.newcoverpic;
-			document.getElementById("coverpic").focus();
-			document.getElementById("coverpic").blur();
-			document.getElementById("geterror").innerHTML = ""
-			document.getElementById("geterror").innerHTML = "Successfully Retrieve"
-		}
-		else{
-			document.getElementById("submiterror").innerHTML = "You have nothing to retrieve"
-		}
-	} 
-	else {
-		document.getElementById("submiterror").innerHTML = "Sorry! No Web Storage support.."
-	}
-		
+	
+		document.getElementById("cname").value = localStorage.newComName;
+		document.getElementById("cname").focus();
+		document.getElementById("logourl").value = localStorage.newlogo;
+		document.getElementById("logourl").focus();
+		document.getElementById("coverpic").value = localStorage.newcoverpic;
+		document.getElementById("coverpic").focus();
+		document.getElementById("coverpic").blur();
+		document.getElementById("geterror").innerHTML = ""
+		document.getElementById("geterror").innerHTML = "Successfully Retrieve"
+	
 }
 
 
