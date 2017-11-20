@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>StoreFront Admin</title>
+	  <meta charset="UTF-8">
+	  <link rel="stylesheet" type="text/css" href="style.css">
+	  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+</head>
+<body style="margin:0px">
+
+
+<div class="header">
+	<div class="logo">
+		<img src="https://vnnic.vn/sites/default/files/webnic-logo_3.png">
+	</div>
+	<div class="title">
+		StoreFront Admin
+	</div>
+
+</div>
+
+<div class="content">
+<div class="wrapper">
+	<button id="Submit" onclick="getLocalStorage()">Load Configuration</button><span id="geterror" style="color:red"></span><br>
+	<span>Company Name:</span>
+	<input type="text" id="cname" value=" "><span id="cnameerror" style="color:red"></span><br>
+	<span>Logo URL:</span>
+	<input type="text" id="logourl"><span id="logourlerror" style="color:red"></span><br>
+	<span>Cover Picture:</span>
+	<input type="text" id="coverpic"><span id="coverpicerror" style="color:red"></span><br>
+	<span>Theme:</span>
+	<button id="ThemeAbtn" onclick="ThemeA()">Theme A</button><button id="ThemeBbtn" onclick="ThemeB()">Theme B</button><br>
+	<button id="Submit" onclick="setLocalStorage()">Confirm</button><span id="submiterror" style="color:red"></span>
+
+	<div class="separator"></div>
+	
+	<span>Preview</span>
+	<br>
+	<div style="width:100%">
+	
+	<div class="PreviewContainer">
+		<div id="PBody" class="PreviewBody Theme-A-Font-Family">
+			<div id="Pheader" class="PreviewHeader Theme-A-Header-Color Theme-A-Font-Color">
+				<div class="logo">
+				<img id="Plogo" src="https://vnnic.vn/sites/default/files/webnic-logo_3.png">
+				</div>
+				<div class="title">
+					<span id="comname1">Hello</span>
+				</div>
+			</div>
+			<div class="content">
+				<div style="text-align:center">
+					<div id="PCoverPic" class="PreviewBodyContentCompany" style="background-image:url(https://hdwallsource.com/img/2014/4/free-background-wallpaper-22918-23554-hd-wallpapers.jpg);">
+						<div style="color:white;height:100%;padding: 150px 0;">
+						
+							<h2 style=";"><span id="comname2">hello</span></h2>
+							<h5>Hello! Welcome to <span id="comname3">hello</span>. You can get everything you want in 5 minutes within your expectation! </h5>
+						</div>
+					</div>
+				</div>
+				<div style="margin: 0 auto;display:block;">
+					<div id="ThemeProductList1" class="Theme-A-Product"> 
+						<div id="prod1" class="Theme-A-ProductStyle">
+						Web Builder
+						</div>
+					</div><div id="ThemeProductList2" class="Theme-A-Product"> 
+						<div id="prod2" class="Theme-A-ProductStyle">
+						Web Address
+						</div>
+					</div><div id="ThemeProductList3" class="Theme-A-Product"> 
+						<div id="prod3" class="Theme-A-ProductStyle">
+						Security
+						</div>
+					</div><div id="ThemeProductList4" class="Theme-A-Product"> 
+						<div id="prod4" class="Theme-A-ProductStyle">
+						Hosting
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		
+			
+		</div>
+	
+	
+	</div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</div>
+</div>
+
+
+
+<br>
+
+
+	<script language="javascript" type ="text/javascript" src="https://code.jquery.com/jquery-3.2.1.js">
+	</script>
+	<script language="javascript" type ="text/javascript" src="script.js">
+	</script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+</body>
+</html>
