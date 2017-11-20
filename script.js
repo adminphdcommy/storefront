@@ -124,7 +124,7 @@ function setLocalStorage(){
 
 function getLocalStorage(){
 	if (typeof(Storage) !== "undefined") {
-		if(localStorage.newComName !== "undefined" || localStorage.newlogo !== "undefined" || localStorage.newcoverpic !== "undefined"){
+		if(localStorage.newComName !== "undefined" && localStorage.newlogo !== "undefined" && localStorage.newcoverpic !== "undefined"){
 			document.getElementById("cname").value = localStorage.newComName;
 			document.getElementById("cname").focus();
 			document.getElementById("logourl").value = localStorage.newlogo;
