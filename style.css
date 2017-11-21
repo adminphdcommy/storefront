@@ -73,7 +73,7 @@
 	width:100%;
 }
 
-.PreviewContainer .title{
+.PreviewHeader .title{
 	
 	font-weight:bold;
 	font-size:110%;
@@ -103,6 +103,8 @@
 	
 	z-index:10;
 }
+
+
 
 
 .PreviewHeader .logo {
