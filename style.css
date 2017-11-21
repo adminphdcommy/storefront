@@ -4,10 +4,10 @@
     position:sticky;
     width:100%;
     top:0;
-    opacity: 0.9;
+    opacity: 1;
     padding:10px;
 	border-bottom:3px solid #138D75;
-	z-index:10;
+	z-index:100;
 }
 
 .header .title{

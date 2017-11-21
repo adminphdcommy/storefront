@@ -122,6 +122,22 @@ function setLocalStorage(){
 
 }
 
+function setThemeLocalStorage(){
+	var newComName = document.getElementById("cname").value.toUpperCase();
+	var newlogo = document.getElementById("logourl").value;
+	var newcoverpic = document.getElementById("coverpic").value;
+	if (typeof(Storage) !== "undefined") {
+		localStorage.setItem("newComName", newComName)
+		localStorage.setItem("newlogo", newlogo)
+		localStorage.setItem("newcoverpic", newcoverpic)
+		document.getElementById("submiterror").innerHTML = ""
+		document.getElementById("submiterror").innerHTML = "Successfully Saved"
+	} else {
+		document.getElementById("submiterror").innerHTML = "Sorry! No Web Storage support.."
+	}
+
+}
+
 function getLocalStorage(){
 	
 		document.getElementById("cname").value = localStorage.newComName;
