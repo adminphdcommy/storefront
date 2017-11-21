@@ -122,19 +122,20 @@ function setLocalStorage(){
 
 }
 
-function setThemeLocalStorage(){
-	var newComName = document.getElementById("cname").value.toUpperCase();
-	var newlogo = document.getElementById("logourl").value;
-	var newcoverpic = document.getElementById("coverpic").value;
+document.getElementById("ThemeAbtn").addEventListener("click", function(){setThemeLocalStorage("A")});
+document.getElementById("ThemeBbtn").addEventListener("click", function(){setThemeLocalStorage("B")});
+
+
+function setThemeLocalStorage(x){
+	console.log("setThemeLocalStorage "+ x)
 	if (typeof(Storage) !== "undefined") {
-		localStorage.setItem("newComName", newComName)
-		localStorage.setItem("newlogo", newlogo)
-		localStorage.setItem("newcoverpic", newcoverpic)
-		document.getElementById("submiterror").innerHTML = ""
-		document.getElementById("submiterror").innerHTML = "Successfully Saved"
+		localStorage.setItem("Theme", x)
+		document.getElementById("themeerror").innerHTML = ""
+		document.getElementById("themeerror").innerHTML = "Successfully Saved"
 	} else {
-		document.getElementById("submiterror").innerHTML = "Sorry! No Web Storage support.."
+		document.getElementById("themeerror").innerHTML = "Sorry! No Web Storage support.."
 	}
+	
 
 }
 
@@ -149,6 +150,15 @@ function getLocalStorage(){
 		document.getElementById("coverpic").blur();
 		document.getElementById("geterror").innerHTML = ""
 		document.getElementById("geterror").innerHTML = "Successfully Retrieve"
+		if(localStorage.Theme=="A"){
+			document.getElementById("ThemeAbtn").click()
+		}
+		else if(localStorage.Theme=="B"){
+			document.getElementById("ThemeBbtn").click()
+		}
+		else{
+			
+		}
 	
 }
 
