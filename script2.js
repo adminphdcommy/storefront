@@ -49,10 +49,10 @@ function ThemeA(){
 	
 	PreHeader.className = "PreviewHeader Theme-A-Header-Color Theme-A-Font-Color";
 	PreBody.className = "PreviewBody Theme-A-Font-Family";
-	PreProduct1.className = "Theme-A-Product";
-	PreProduct2.className = "Theme-A-Product";
-	PreProduct3.className = "Theme-A-Product";
-	PreProduct4.className = "Theme-A-Product";
+	PreProduct1.className += " Theme-A-Product ";
+	PreProduct2.className += " Theme-A-Product ";
+	PreProduct3.className += " Theme-A-Product ";
+	PreProduct4.className += " Theme-A-Product ";
 	PreProductStyle1.className = "Theme-A-ProductStyle";
 	PreProductStyle2.className = "Theme-A-ProductStyle";
 	PreProductStyle3.className = "Theme-A-ProductStyle";
@@ -73,12 +73,60 @@ function ThemeB(){
 	
 	PreHeader.className = "PreviewHeader Theme-B-Header-Color Theme-B-Font-Color";
 	PreBody.className = "PreviewBody Theme-B-Font-Family";
-	PreProduct1.className = "Theme-B-Product";
-	PreProduct2.className = "Theme-B-Product";
-	PreProduct3.className = "Theme-B-Product";
-	PreProduct4.className = "Theme-B-Product";
+	PreProduct1.className += " Theme-B-Product ";
+	PreProduct2.className += " Theme-B-Product ";
+	PreProduct3.className += " Theme-B-Product ";
+	PreProduct4.className += " Theme-B-Product ";
 	PreProductStyle1.className = "Theme-B-ProductStyle";
 	PreProductStyle2.className = "Theme-B-ProductStyle";
 	PreProductStyle3.className = "Theme-B-ProductStyle";
 	PreProductStyle4.className = "Theme-B-ProductStyle";
 }
+
+
+/*<-------------------------Light Box Area------------------------------>*/
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("ThemeProductList2");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+
+btn.className += " pointer-cursor";
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+
+/*<_____________________Light Box Area____________________________>*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+

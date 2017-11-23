@@ -1,3 +1,5 @@
+window.addEventListener("load",getLocalStorage)
+
 function ThemeA(){
 	var PreHeader = document.getElementById("Pheader");
 	var PreBody = document.getElementById("PBody");
@@ -12,10 +14,10 @@ function ThemeA(){
 	
 	PreHeader.className = "PreviewHeader Theme-A-Header-Color Theme-A-Font-Color";
 	PreBody.className = "PreviewBody Theme-A-Font-Family";
-	PreProduct1.className = "Theme-A-Product";
-	PreProduct2.className = "Theme-A-Product";
-	PreProduct3.className = "Theme-A-Product";
-	PreProduct4.className = "Theme-A-Product";
+	PreProduct1.className = " Theme-A-Product ";
+	PreProduct2.className = " Theme-A-Product ";
+	PreProduct3.className = " Theme-A-Product ";
+	PreProduct4.className = " Theme-A-Product ";
 	PreProductStyle1.className = "Theme-A-ProductStyle";
 	PreProductStyle2.className = "Theme-A-ProductStyle";
 	PreProductStyle3.className = "Theme-A-ProductStyle";
@@ -66,6 +68,7 @@ function setComName(){
 		companyName2.innerHTML = newComName;
 		companyName3.innerHTML = newComName;
 		console.log(document.getElementById('cname').value);
+		
 	}
 }
 
@@ -116,6 +119,7 @@ function setLocalStorage(){
 		localStorage.setItem("newcoverpic", newcoverpic)
 		document.getElementById("submiterror").innerHTML = ""
 		document.getElementById("submiterror").innerHTML = "Successfully Saved"
+		
 	} else {
 		document.getElementById("submiterror").innerHTML = "Sorry! No Web Storage support.."
 	}
