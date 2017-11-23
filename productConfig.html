@@ -23,30 +23,22 @@
 
 <div class="content">
 <div class="wrapper">
-	<button id="Submit" onclick="getLocalStorage()">Load Configuration</button><span id="geterror" style="color:red"></span><br>
-	<span>Company Name:</span>
-	<input type="text" id="cname" value=" "><span id="cnameerror" style="color:red"></span><br>
-	<span>Logo URL:</span>
-	<input type="text" id="logourl"><span id="logourlerror" style="color:red"></span><br>
-	<span>Cover Picture:</span>
-	<input type="text" id="coverpic"><span id="coverpicerror" style="color:red"></span><br>
-	<span>Theme:</span>
-	<button id="ThemeAbtn" onclick="ThemeA()">Theme A</button><button id="ThemeBbtn" onclick="ThemeB()">Theme B</button><span id="themeerror" style="color:red"></span><br>
-	<button id="Submit" onclick="setLocalStorage()">Confirm and Next</button><span id="submiterror" style="color:red"></span>
+	<form action=" ">
+		<input id="DomainProduct" type="checkbox" name="1productlist" value="Domain" onclick="DomainProductCB(this)">Domain<br>
+		<input id="SSLProduct" type="checkbox" name="productlist" value="SSL" onclick="SSLProductCB(this)">SSL<br>
+		<input id="WebBuilderProduct" type="checkbox" name="productlist" value="Web Builder" onclick="WebBuilderProductCB(this)">Web Builder<br>
+		<input id="HostingProductCB" type="checkbox" name="productlist" value="Hosting" onclick="WebBuilderProductCB(this)">Hosting<br>
+		<input id="submitproductconfig" type="submit" value="submit">
+	</form>
 
 	<div class="separator"></div>
 	
 	<span>Preview</span>
 	<br>
-	<div style="width:100%">
-	
-	
 	
 	<div class="PreviewContainer">
 	<iframe src="./storefront.html" height="100%" width="100%" id="iframeid"></iframe>
 	</div>
-	</div>
-	
 	
 	
 	

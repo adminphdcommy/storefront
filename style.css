@@ -60,7 +60,7 @@
 	
 	width:1000px;
 	height:600px;
-	overflow:auto;
+	overflow:none;
 	border:1px solid black;
 	
 	
@@ -98,7 +98,7 @@
     position:sticky;
     width:100%;
     top:0;
-    opacity: 0.9;
+    opacity: 1;
     padding:10px;
 	
 	z-index:10;
@@ -127,17 +127,17 @@
 
 
 
-.PreviewContainer::-webkit-scrollbar {
+#iframeid::-webkit-scrollbar {
     width: 10px;
 }
 
 /* Track */
-.PreviewContainer::-webkit-scrollbar-track {
+#iframeid::-webkit-scrollbar-track {
     background: #f1f1f1; 
 }
  
 /* Handle */
-.PreviewContainer::-webkit-scrollbar-thumb {
+#iframeid::-webkit-scrollbar-thumb {
     background: #888; 
 }
 

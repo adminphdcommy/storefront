@@ -22,6 +22,7 @@ function ThemeA(){
 	PreProductStyle2.className = "Theme-A-ProductStyle";
 	PreProductStyle3.className = "Theme-A-ProductStyle";
 	PreProductStyle4.className = "Theme-A-ProductStyle";
+	document.getElementById('iframeid').contentWindow.location.reload()
 }
 
 function ThemeB(){
@@ -46,6 +47,7 @@ function ThemeB(){
 	PreProductStyle2.className = "Theme-B-ProductStyle";
 	PreProductStyle3.className = "Theme-B-ProductStyle";
 	PreProductStyle4.className = "Theme-B-ProductStyle";
+	document.getElementById('iframeid').contentWindow.location.reload()
 }
 
 document.getElementById("cname").addEventListener("blur", setComName);
@@ -119,6 +121,7 @@ function setLocalStorage(){
 		localStorage.setItem("newcoverpic", newcoverpic)
 		document.getElementById("submiterror").innerHTML = ""
 		document.getElementById("submiterror").innerHTML = "Successfully Saved"
+		location.href = "./productConfig.html"
 		
 	} else {
 		document.getElementById("submiterror").innerHTML = "Sorry! No Web Storage support.."
@@ -166,9 +169,45 @@ function getLocalStorage(){
 	
 }
 
+function DomainProductCB(checkboxElem){
+	if(checkboxElem.checked){
+		console.log(true)
+	}
+	else{
+		console.log(false)
+	}
+	
+}
 
+function SSLProductCB(checkboxElem){
+	if(checkboxElem.checked){
+		console.log(SSLProduct.checked)
+	}
+	else{
+		console.log(SSLProduct.checked)
+	}
+	
+}
 
+function WebBuilderProductCB(checkboxElem){
+	if(checkboxElem.checked){
+		console.log(WebBuilderProduct.checked)
+	}
+	else{
+		console.log(WebBuilderProduct.checked)
+	}
+	
+}
 
+function HostingProductCB(checkboxElem){
+	if(checkboxElem.checked){
+		console.log(HostingProduct.checked)
+	}
+	else{
+		console.log(HostingProduct.checked)
+	}
+	
+}
 
 
 
