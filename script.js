@@ -22,7 +22,7 @@ function ThemeA(){
 	PreProductStyle2.className = "Theme-A-ProductStyle";
 	PreProductStyle3.className = "Theme-A-ProductStyle";
 	PreProductStyle4.className = "Theme-A-ProductStyle";
-	document.getElementById('iframeid').contentWindow.location.reload()
+	document.getElementById('iframeid').src = document.getElementById('iframeid').src
 }
 
 function ThemeB(){
@@ -170,8 +170,10 @@ function getLocalStorage(){
 }
 
 function DomainProductCB(checkboxElem){
+	var productSection = document.getElementById("ThemeProductList")
 	if(checkboxElem.checked){
 		console.log(true)
+		
 	}
 	else{
 		console.log(false)
@@ -190,8 +192,10 @@ function SSLProductCB(checkboxElem){
 }
 
 function WebBuilderProductCB(checkboxElem){
+	
 	if(checkboxElem.checked){
-		console.log(WebBuilderProduct.checked)
+		$('ThemeProductList').append(appendProductWebBuilder())
+		console.log(appendProductWebBuilder())
 	}
 	else{
 		console.log(WebBuilderProduct.checked)
@@ -211,8 +215,14 @@ function HostingProductCB(checkboxElem){
 
 
 
+function appendProductWebBuilder(){
+	var productDIV = $('<div id="ThemeProductList1" class=" "></div>')
+	var productName = $('<div id="prod1" class="Theme-A-ProductStyle">Web Builder</div>')
+	
+	return productDIV.append(productName)
 
-
+	
+}
 
 
 
